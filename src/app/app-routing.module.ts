@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { BodyComponent } from './components/body/body.component';
 import { DirectivasComponent } from './components/directivas/directivas.component';
 import { MateriasComponent } from './components/materias/materias.component';
+import { PaisDetalleComponent } from './components/pais-detalle/pais-detalle.component';
+import { PaisesComponent } from './components/paises/paises.component';
 
 const ROUTES: Routes = [
   {
@@ -18,10 +20,22 @@ const ROUTES: Routes = [
     component: MateriasComponent,
   },
   {
-    path: '',
+    path: 'paises',
+    component:PaisesComponent,
+    
+  },
+  {
+    path: 'detallePais/:id',
+    component:PaisDetalleComponent,
+    
+  },
+  {
+    path: 'paises',
     redirectTo:'home',
     pathMatch:'full'
   }
+
+
 ];
 
 @NgModule({
