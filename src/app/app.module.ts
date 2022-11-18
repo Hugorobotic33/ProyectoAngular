@@ -14,7 +14,8 @@ import { PaisesComponent } from './components/paises/paises.component';
 import { PaisTarjetaComponent } from './components/pais-tarjeta/pais-tarjeta.component';
 import { PaisDetalleComponent } from './components/pais-detalle/pais-detalle.component';
 import { PaisesService } from './services/paises.service';
-
+import { NuevoUsuarioComponent } from './components/nuevo-usuario/nuevo-usuario.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,14 @@ import { PaisesService } from './services/paises.service';
     MateriaComponent,
     PaisesComponent,
     PaisTarjetaComponent,
-    PaisDetalleComponent
+    PaisDetalleComponent,
+    NuevoUsuarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   
   ],
   providers: [
